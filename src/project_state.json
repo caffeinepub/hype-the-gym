@@ -1,0 +1,276 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 7,
+  "summary": "Design and build a modern, bold, premium fitness gym marketing website for \"Hype The Gym\" with a white + gold premium light theme, strong typography, mobile-first responsive UI, and key lead-capture features (membership and free-trial forms, WhatsApp/call buttons, maps, SEO, fast loading). Remove the entire Before/After transformation section site-wide.",
+  "architectural_notes": [
+    "Use realistic gym interior, trainers, and equipment visuals; fitness icons and motivational graphics.",
+    "Use placeholder business details (phone, email, address, hours) and motivational/professional tone across content.",
+    "Apply a premium light theme site-wide: white backgrounds with gold accents; maintain strong typography and premium spacing."
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-implement-a-9-page-marketing-website-for-the-fitness-brand-hype-the-gym-with-client-side-routing-and-a-consistent-global-layout-header-navigation-footer-for-these-pages-home-about-us-programs-training-plans-trainers-membership-plans-gallery-contact-us-blog-fitness-tips-faq",
+      "title": "Implement a 9-page marketing website for the fitness brand “Hype The Gym” with client-side routing and a consistent global layout (header navigation + footer) for these pages: Home, About Us, Programs / Training Plans, Trainers, Membership Plans, Gallery, Contact Us, Blog / Fitness Tips, FAQ.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-dark-luxury-high-energy-visual-theme-across-the-site-primarily-black-backgrounds-with-red-and-neon-blue-accents-strong-modern-typography-premium-spacing-and-responsive-layouts-optimized-for-mobile-and-desktop",
+      "title": "Apply a dark luxury, high-energy visual theme across the site: primarily black backgrounds with red and neon blue accents, strong modern typography, premium spacing, and responsive layouts optimized for mobile and desktop.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-the-home-page-with-the-specified-sections-and-content-structure-1-hero-section-with-headline-transform-your-body-transform-your-life-and-cta-buttons-join-now-and-book-free-trial-2-about-hype-the-gym-mission-vision-3-popular-training-programs-with-icons-and-images-4-membership-plans-preview-5-before-after-transformation-gallery-6-testimonials-7-why-choose-hype-the-gym-8-trainer-profiles-with-certifications-9-google-map-contact-section-10-footer-with-contact-details-and-social-media-links",
+      "title": "Build the Home page with the specified sections and content structure: (1) Hero section with headline “Transform Your Body. Transform Your Life.” and CTA buttons “Join Now” and “Book Free Trial”; (2) About Hype The Gym (mission + vision); (3) Popular Training Programs with icons and images; (4) Membership Plans preview; (5) Before & After transformation gallery; (6) Testimonials; (7) Why Choose Hype The Gym; (8) Trainer profiles with certifications; (9) Google Map + Contact section; (10) Footer with contact details and social media links.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-programs-training-plans-page-that-clearly-presents-all-requested-programs-with-descriptive-motivational-copy-and-program-cards-sections-for-weight-loss-training-muscle-building-personal-training-cardio-training-crossfit-hiit-yoga-zumba-strength-conditioning-fat-loss-bootcamp-diet-nutrition-coaching",
+      "title": "Create a Programs / Training Plans page that clearly presents all requested programs with descriptive, motivational copy and program cards/sections for: Weight Loss Training, Muscle Building, Personal Training, Cardio Training, CrossFit & HIIT, Yoga & Zumba, Strength & Conditioning, Fat Loss Bootcamp, Diet & Nutrition Coaching.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-trainers-page-and-home-page-trainer-section-featuring-trainer-cards-with-realistic-trainer-visuals-names-roles-specialties-and-visible-certification-tags-labels",
+      "title": "Create a Trainers page and Home-page trainer section featuring trainer cards with realistic trainer visuals, names, roles/specialties, and visible certification tags/labels.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-membership-plans-page-and-home-page-plans-preview-featuring-multiple-tiers-e-g-basic-standard-premium-with-pricing-placeholders-included-benefits-and-a-prominent-join-now-cta-that-opens-the-online-membership-form",
+      "title": "Create a Membership Plans page and Home-page plans preview featuring multiple tiers (e.g., Basic/Standard/Premium) with pricing placeholders, included benefits, and a prominent “Join Now” CTA that opens the Online Membership Form.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-an-online-membership-form-lead-capture-that-collects-at-minimum-full-name-phone-email-selected-plan-program-interest-preferred-start-date-and-optional-message-validate-required-fields-show-success-error-states-after-submission",
+      "title": "Implement an Online Membership Form (lead capture) that collects at minimum: full name, phone, email, selected plan/program interest, preferred start date, and optional message; validate required fields; show success/error states after submission.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-free-trial-booking-form-lead-capture-that-collects-at-minimum-full-name-phone-email-preferred-date-time-preferred-program-and-optional-notes-validate-required-fields-show-success-error-states-after-submission",
+      "title": "Implement a Free Trial Booking Form (lead capture) that collects at minimum: full name, phone, email, preferred date/time, preferred program, and optional notes; validate required fields; show success/error states after submission.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-persistent-quick-contact-ui-actions-a-whatsapp-chat-button-linking-to-whatsapp-using-the-placeholder-phone-number-91-9xxxxxxxxx-and-a-call-now-button-linking-via-tel-to-the-same-placeholder-number-ensure-these-are-mobile-friendly-and-do-not-obstruct-primary-content",
+      "title": "Add persistent quick-contact UI actions: a WhatsApp chat button linking to WhatsApp using the placeholder phone number (+91 9XXXXXXXXX) and a “Call Now” button linking via tel: to the same placeholder number; ensure these are mobile-friendly and do not obstruct primary content.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-integrate-google-maps-on-the-home-contact-section-and-on-the-contact-us-page-using-an-embeddable-map-iframe-based-with-the-placeholder-address-add-full-gym-address-here-and-include-a-clearly-structured-contact-block-phone-email-address-opening-hours-5-am-11-pm",
+      "title": "Integrate Google Maps on the Home contact section and on the Contact Us page using an embeddable map (iframe-based) with the placeholder address (“Add full gym address here”) and include a clearly structured contact block (phone, email, address, opening hours: 5 AM - 11 PM).",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-gallery-page-that-includes-a-realistic-gym-interior-images-b-workout-equipment-imagery-and-c-a-before-after-transformation-gallery-section-include-a-responsive-grid-with-lightbox-modal-viewing",
+      "title": "Create a Gallery page that includes (a) realistic gym interior images, (b) workout equipment imagery, and (c) a Before & After transformation gallery section; include a responsive grid with lightbox/modal viewing.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-blog-fitness-tips-page-that-lists-multiple-posts-seed-content-with-motivational-professional-fitness-focused-tone-include-a-blog-post-detail-view-page-for-reading-the-full-article-content",
+      "title": "Create a Blog / Fitness Tips page that lists multiple posts (seed content) with motivational, professional fitness-focused tone; include a blog post detail view/page for reading the full article content.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-an-faq-page-with-common-gym-faqs-seed-content-covering-membership-trial-sessions-opening-hours-training-programs-nutrition-coaching-and-safety-present-in-an-accordion-layout-for-fast-scanning",
+      "title": "Create an FAQ page with common gym FAQs (seed content) covering membership, trial sessions, opening hours, training programs, nutrition coaching, and safety; present in an accordion layout for fast scanning.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-seo-optimized-layout-basics-per-page-document-titles-and-meta-descriptions-semantic-headings-landmarks-open-graph-defaults-and-performance-minded-image-usage-optimized-sizes-lazy-loading-where-appropriate-to-ensure-fast-loading-and-mobile-friendly-behavior",
+      "title": "Add SEO-optimized layout basics: per-page document titles and meta descriptions, semantic headings/landmarks, Open Graph defaults, and performance-minded image usage (optimized sizes, lazy-loading where appropriate) to ensure fast loading and mobile-friendly behavior.",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-use-the-provided-placeholders-consistently-across-the-website-wherever-contact-business-details-appear-gym-name-hype-the-gym-phone-91-9xxxxxxxxx-email-info-hypethegym-com-address-add-full-gym-address-here-opening-hours-5-am-11-pm",
+      "title": "Use the provided placeholders consistently across the website wherever contact/business details appear: Gym Name “Hype The Gym”, Phone “+91 9XXXXXXXXX”, Email “info@hypethegym.com”, Address “Add full gym address here”, Opening Hours “5 AM - 11 PM”.",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-the-generated-image-assets-to-the-frontend-as-static-files-under-frontend-public-assets-generated-and-render-them-throughout-the-site-hero-programs-trainers-gallery-without-fetching-images-through-the-backend",
+      "title": "Add the generated image assets to the frontend as static files under frontend/public/assets/generated and render them throughout the site (hero, programs, trainers, gallery) without fetching images through the backend.",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-fix-the-before-after-transformation-section-so-the-after-image-is-present-and-visibly-renders-anywhere-the-transformation-pair-appears-home-page-preview-and-gallery-page-transformation-section-ensure-the-referenced-asset-path-assets-generated-hype-after-1-dim-1200x1200-png-exists-in-frontend-public-assets-generated-and-does-not-render-as-a-broken-missing-image",
+      "title": "Fix the Before/After transformation section so the AFTER image is present and visibly renders anywhere the transformation pair appears (Home page preview and Gallery page transformation section). Ensure the referenced asset path `/assets/generated/hype-after-1.dim_1200x1200.png` exists in `frontend/public/assets/generated` and does not render as a broken/missing image.",
+      "reqIds": [
+        "REQ-18"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-trainers-page-so-every-trainer-card-uses-a-distinct-non-repeated-trainer-image-replace-the-currently-duplicated-trainer-images-by-introducing-additional-generated-trainer-portrait-assets-and-updating-the-trainer-data-to-reference-unique-files-for-all-6-trainers",
+      "title": "Update the Trainers page so every trainer card uses a distinct (non-repeated) trainer image. Replace the currently duplicated trainer images by introducing additional generated trainer portrait assets and updating the trainer data to reference unique files for all 6 trainers.",
+      "reqIds": [
+        "REQ-19"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-decrease-the-displayed-price-by-1-000-for-every-membership-plan-tier-across-the-site-basic-standard-premium-including-the-home-page-plans-preview-and-the-membership-plans-page",
+      "title": "Decrease the displayed price by ₹1,000 for every membership plan tier across the site (Basic, Standard, Premium), including the Home page plans preview and the Membership Plans page.",
+      "reqIds": [
+        "REQ-20"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-entire-before-after-transformation-section-everywhere-it-appears-on-the-site-including-the-home-page-and-the-gallery-page-so-that-no-before-after-transformation-ui-headings-copy-or-images-are-rendered",
+      "title": "Remove the entire “Before & After / Transformation” section everywhere it appears on the site, including the Home page and the Gallery page, so that no before/after transformation UI, headings, copy, or images are rendered.",
+      "reqIds": [
+        "REQ-21"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-change-the-site-wide-theme-to-a-premium-light-look-white-base-with-gold-accents-and-remove-any-forced-dark-mode-behavior-so-the-entire-site-renders-in-light-theme-by-default",
+      "title": "Change the site-wide theme to a premium light look (white base with gold accents) and remove any forced dark-mode behavior so the entire site renders in light theme by default.",
+      "reqIds": [
+        "REQ-22"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-existing-ui-components-that-hard-code-the-previous-accent-colors-currently-using-specific-oklch-color-literals-to-use-the-new-white-gold-design-tokens-variables-so-the-premium-gold-accent-is-consistent-across-header-hero-contact-headings-footer-and-other-highlighted-elements",
+      "title": "Update existing UI components that hard-code the previous accent colors (currently using specific OKLCH color literals) to use the new white+gold design tokens/variables so the premium gold accent is consistent across Header, Hero, Contact headings, Footer, and other highlighted elements.",
+      "reqIds": [
+        "REQ-23"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create 9-page site structure: Home, About Us, Programs/Training Plans, Trainers, Membership Plans, Gallery, Contact Us, Blog/Fitness Tips, FAQ",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Build Home page sections per spec (hero w/ headline + CTAs, about, popular programs, plans preview, before/after, testimonials, why choose, trainer profiles, map/contact, footer/social)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Add Programs/Training Plans content covering listed programs (weight loss, muscle building, personal training, cardio, CrossFit/HIIT, yoga/zumba, strength/conditioning, fat loss bootcamp, diet/nutrition coaching)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Implement Online Membership Form (lead capture)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Implement Free Trial Booking Form (lead capture)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Add WhatsApp chat button and Call Now button for quick contact",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Integrate Google Maps on contact section/page",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Apply SEO-optimized layout and performance requirements (fast loading, mobile friendly)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-22",
+      "summary": "Implement backend storage and retrieval for submitted Membership and Free Trial leads in the single Motoko main actor, including: create endpoints for submissions, basic server-side validation, and an endpoint to fetch recent submissions (for developer verification).",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-24",
+      "summary": "Update trainer visuals so each trainer uses a distinct/different image (no duplicates/too-similar images)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-25",
+      "summary": "Decrease pricing by 1000 for all membership plans (all tiers) across the site",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-26",
+      "summary": "Remove the entire Before & After transformation section wherever it appears (Home page and Gallery)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-27",
+      "summary": "Change the site-wide theme to a premium light look: white base with gold accents (replace prior dark luxury theme)",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Hype The Gym",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

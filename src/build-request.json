@@ -1,0 +1,104 @@
+{
+  "kind": "build_request",
+  "title": "Remove Before/After section site-wide and switch to premium white + gold light theme",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-21",
+      "text": "Remove the entire “Before & After / Transformation” section everywhere it appears on the site, including the Home page and the Gallery page, so that no before/after transformation UI, headings, copy, or images are rendered.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "recent-4",
+          "recent-6",
+          "recent-8",
+          "recent-10"
+        ],
+        "quotes": [
+          "poora section hi delete ker do",
+          "build now start just"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Home page no longer renders the BeforeAfterPreview section and there is no empty spacing where it used to be.",
+        "Gallery page no longer renders the Transformation Stories/BeforeAfterPair section and there is no empty spacing where it used to be.",
+        "No before/after transformation images (e.g., hype-before-1 / hype-after-1) are referenced by any rendered component in the UI.",
+        "Build succeeds with no unused-import TypeScript errors after removing the section(s)."
+      ]
+    },
+    {
+      "id": "REQ-22",
+      "text": "Change the site-wide theme to a premium light look (white base with gold accents) and remove any forced dark-mode behavior so the entire site renders in light theme by default.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "recent-6",
+          "recent-7",
+          "recent-8",
+          "recent-10"
+        ],
+        "quotes": [
+          "theme color change kar do light rakho",
+          "white + gold premiume look ke sath",
+          "poori per karo pahle"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The app is no longer forced into dark mode (e.g., ThemeProvider is not set to forcedTheme=\"dark\" / defaultTheme=\"dark\").",
+        "Global background is light (white or near-white) with dark readable foreground text across all pages.",
+        "Gold is the primary accent used consistently for highlights, gradients, borders, icons, and CTA emphasis across the site.",
+        "No prominent red/neon-blue accent styling remains in key UI elements (header brand/icon, primary CTA buttons, page title gradients, etc.)."
+      ]
+    },
+    {
+      "id": "REQ-23",
+      "text": "Update existing UI components that hard-code the previous accent colors (currently using specific OKLCH color literals) to use the new white+gold design tokens/variables so the premium gold accent is consistent across Header, Hero, Contact headings, Footer, and other highlighted elements.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "recent-6",
+          "recent-7",
+          "recent-8"
+        ],
+        "quotes": [
+          "theme color change kar do light rakho",
+          "white + gold premiume look ke sath",
+          "poori per karo pahle"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Header brand icon/gradient, navigation hover/active styles, and “Join Now” button use the gold accent rather than the old hard-coded OKLCH values.",
+        "Hero section accent pill, headline gradient, and CTAs use gold accents consistent with the new theme.",
+        "Page title gradient accents (e.g., Gallery/Contact headings) use the new gold accent styling.",
+        "Footer accent elements (icons, brand name, heart) use the new gold accent styling.",
+        "Accent colors are controlled primarily via theme variables/tokens rather than repeated hard-coded color literals throughout components."
+      ]
+    }
+  ],
+  "constraints": [
+    "Frontend immutable paths must not be edited: frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, frontend/src/components/ui/*.",
+    "Keep the backend as a single Motoko actor; no backend changes are required for this request."
+  ],
+  "nonGoals": [
+    "Do not remove or modify the Membership or Free Trial lead-capture forms or backend submission logic.",
+    "Do not delete image files from frontend/public/assets/generated as part of this change; only remove the Before/After section from the UI.",
+    "Do not change the site’s routes or page structure beyond removing the Before/After section content."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [
+      "Site-wide premium light theme: white base with gold accents.",
+      "Remove the Before & After transformation section site-wide."
+    ],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

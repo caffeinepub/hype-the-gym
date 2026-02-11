@@ -1,0 +1,104 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Remove Before/After sections and apply premium white + gold light theme",
+  "requirements": [
+    {
+      "id": "REQ-21",
+      "summary": "Remove the entire Before & After / Transformation section from all pages so no related UI or images render.",
+      "acceptanceCriteria": [
+        "Home page no longer renders the BeforeAfterPreview section and there is no empty spacing where it used to be.",
+        "Gallery page no longer renders the Transformation Stories/BeforeAfterPair section and there is no empty spacing where it used to be.",
+        "No before/after transformation images (e.g., hype-before-1 / hype-after-1) are referenced by any rendered component in the UI.",
+        "Build succeeds with no unused-import TypeScript errors after removing the section(s)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/HomePage.tsx",
+          "operation": "modify",
+          "description": "Remove the BeforeAfterPreview import and JSX usage so the Home page no longer renders any transformation section and does not leave an empty gap."
+        },
+        {
+          "path": "frontend/src/pages/GalleryPage.tsx",
+          "operation": "modify",
+          "description": "Remove the BeforeAfterPair import and the entire Transformation Stories section block so the Gallery page only renders the facility photo gallery content (no leftover spacing)."
+        },
+        {
+          "path": "frontend/src/components/home/BeforeAfterPreview.tsx",
+          "operation": "delete",
+          "description": "Delete the Home-page Before/After preview component to ensure transformation UI and references to before/after assets are removed from the shipped UI code."
+        },
+        {
+          "path": "frontend/src/components/gallery/BeforeAfterPair.tsx",
+          "operation": "delete",
+          "description": "Delete the Gallery-page Before/After pair component to ensure transformation UI and references to before/after assets are removed from the shipped UI code."
+        }
+      ]
+    },
+    {
+      "id": "REQ-22",
+      "summary": "Switch the site-wide theme to a premium light look (white base, gold accents) and remove any forced dark-mode behavior.",
+      "acceptanceCriteria": [
+        "The app is no longer forced into dark mode (e.g., ThemeProvider is not set to forcedTheme=\"dark\" / defaultTheme=\"dark\").",
+        "Global background is light (white or near-white) with dark readable foreground text across all pages.",
+        "Gold is the primary accent used consistently for highlights, gradients, borders, icons, and CTA emphasis across the site.",
+        "No prominent red/neon-blue accent styling remains in key UI elements (header brand/icon, primary CTA buttons, page title gradients, etc.)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Update the ThemeProvider configuration to remove forced dark-mode behavior and set the default rendering to light theme (no forcedTheme=\"dark\" / defaultTheme=\"dark\")."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Update global CSS variables to a light-first palette (near-white background, dark readable foreground) and define premium gold as the primary accent via theme tokens (e.g., --primary/--accent) so the site renders light by default."
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Adjust Tailwind theme extensions to align with the new premium light look (e.g., replace any red/neon glow-like styling with subtle gold-compatible shadows/accents) while keeping existing token-based color mapping."
+        }
+      ]
+    },
+    {
+      "id": "REQ-23",
+      "summary": "Replace hard-coded accent OKLCH literals in key UI components with the new gold theme tokens for consistent premium styling.",
+      "acceptanceCriteria": [
+        "Header brand icon/gradient, navigation hover/active styles, and “Join Now” button use the gold accent rather than the old hard-coded OKLCH values.",
+        "Hero section accent pill, headline gradient, and CTAs use gold accents consistent with the new theme.",
+        "Page title gradient accents (e.g., Gallery/Contact headings) use the new gold accent styling.",
+        "Footer accent elements (icons, brand name, heart) use the new gold accent styling.",
+        "Accent colors are controlled primarily via theme variables/tokens rather than repeated hard-coded color literals throughout components."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/layout/HeaderNav.tsx",
+          "operation": "modify",
+          "description": "Replace hard-coded OKLCH accent classes with token-based classes (e.g., primary/accent) for the brand icon, brand gradient text, nav hover/active states, and “Join Now” button so the header uses the new gold accent consistently."
+        },
+        {
+          "path": "frontend/src/components/home/HeroSection.tsx",
+          "operation": "modify",
+          "description": "Replace hard-coded OKLCH accent classes with token-based classes for the accent pill, headline gradient, and CTA button styling; update the outline CTA to use the gold token accent (removing the previous non-gold accent)."
+        },
+        {
+          "path": "frontend/src/pages/GalleryPage.tsx",
+          "operation": "modify",
+          "description": "Update the page title gradient styling to use the new gold token-based accent classes instead of hard-coded OKLCH color literals."
+        },
+        {
+          "path": "frontend/src/pages/ContactPage.tsx",
+          "operation": "modify",
+          "description": "Update the page title gradient styling to use the new gold token-based accent classes instead of hard-coded OKLCH color literals (do not alter the Free Trial form behavior)."
+        },
+        {
+          "path": "frontend/src/components/layout/SiteFooter.tsx",
+          "operation": "modify",
+          "description": "Replace hard-coded OKLCH accent classes with token-based classes for footer brand name, social icon hover states, contact icons, and the heart icon so footer accents match the premium gold theme."
+        }
+      ]
+    }
+  ]
+}

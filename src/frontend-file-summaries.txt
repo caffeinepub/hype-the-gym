@@ -1,0 +1,18 @@
+{
+  "frontend/src/pages/BlogIndexPage.tsx": "Blog listing page that displays all blog posts in a grid with category badges, dates, and excerpts, using navigate function for type-safe routing to individual posts.",
+  "frontend/src/pages/BlogPostPage.tsx": "Individual blog post detail page that renders full article content with navigation back to the blog index using navigate function and handles missing posts gracefully.",
+  "frontend/src/pages/FaqPage.tsx": "FAQ page displaying frequently asked questions in an accessible accordion layout with contact information for additional questions.",
+  "frontend/src/index.css": "Global CSS with premium white + gold light theme using OKLCH color system with white background, dark text, and gold accents.",
+  "frontend/tailwind.config.js": "Tailwind configuration with token-based color system and updated glow shadow for gold accent compatibility.",
+  "frontend/index.html": "HTML entry point with SEO meta tags, Open Graph properties, and Google Fonts preloading for Inter and Montserrat typefaces.",
+  "frontend/src/pages/TrainersPage.tsx": "Trainers page displaying 6 expert trainers with unique portrait images (hype-trainer-1 through hype-trainer-6), each showing their role, specialty, and certifications in a responsive grid layout.",
+  "frontend/src/components/home/MembershipPlansPreview.tsx": "Home page membership plans preview component displaying three pricing tiers (Basic ₹1,999, Standard ₹3,999, Premium ₹6,999) with features and navigation to the full membership page.",
+  "frontend/src/pages/MembershipPlansPage.tsx": "Full membership plans page showing detailed pricing tiers (Basic ₹1,999, Standard ₹3,999, Premium ₹6,999) with comprehensive feature lists and an integrated membership form for sign-ups.",
+  "frontend/src/App.tsx": "Main app component with routing setup and ThemeProvider configured for light theme by default (no forced dark mode).",
+  "frontend/src/pages/HomePage.tsx": "Home page component rendering all main sections except the removed BeforeAfterPreview section.",
+  "frontend/src/pages/GalleryPage.tsx": "Gallery page displaying only facility photos with gold accent styling, no longer rendering transformation stories section.",
+  "frontend/src/pages/ContactPage.tsx": "Contact page with free trial form and contact details, using gold accent for title gradient.",
+  "frontend/src/components/layout/HeaderNav.tsx": "Site header navigation with brand logo, nav links, and Join Now button using token-based gold accent styling.",
+  "frontend/src/components/layout/SiteFooter.tsx": "Site footer with business info, links, contact details, hours, and attribution using token-based gold accent styling.",
+  "frontend/src/components/home/HeroSection.tsx": "Hero section with headline, description, and CTAs using token-based gold accent styling for premium light theme."
+}

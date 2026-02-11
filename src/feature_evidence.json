@@ -1,0 +1,68 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-remove-the-entire-before-after-transformation-section-everywhere-it-appears-on-the-site-including-the-home-page-and-the-gallery-page-so-that-no-before-after-transformation-ui-headings-copy-or-images-are-rendered",
+      "featureTitle": "Remove the entire “Before & After / Transformation” section everywhere it appears on the site, including the Home page and the Gallery page, so that no before/after transformation UI, headings, copy, or images are rendered.",
+      "files": [
+        "frontend/src/components/gallery/BeforeAfterPair.tsx",
+        "frontend/src/components/home/BeforeAfterPreview.tsx",
+        "frontend/src/pages/GalleryPage.tsx",
+        "frontend/src/pages/HomePage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-21"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-change-the-site-wide-theme-to-a-premium-light-look-white-base-with-gold-accents-and-remove-any-forced-dark-mode-behavior-so-the-entire-site-renders-in-light-theme-by-default",
+      "featureTitle": "Change the site-wide theme to a premium light look (white base with gold accents) and remove any forced dark-mode behavior so the entire site renders in light theme by default.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-22"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-existing-ui-components-that-hard-code-the-previous-accent-colors-currently-using-specific-oklch-color-literals-to-use-the-new-white-gold-design-tokens-variables-so-the-premium-gold-accent-is-consistent-across-header-hero-contact-headings-footer-and-other-highlighted-elements",
+      "featureTitle": "Update existing UI components that hard-code the previous accent colors (currently using specific OKLCH color literals) to use the new white+gold design tokens/variables so the premium gold accent is consistent across Header, Hero, Contact headings, Footer, and other highlighted elements.",
+      "files": [
+        "frontend/src/components/home/HeroSection.tsx",
+        "frontend/src/components/layout/HeaderNav.tsx",
+        "frontend/src/components/layout/SiteFooter.tsx",
+        "frontend/src/pages/ContactPage.tsx",
+        "frontend/src/pages/GalleryPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-23"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
